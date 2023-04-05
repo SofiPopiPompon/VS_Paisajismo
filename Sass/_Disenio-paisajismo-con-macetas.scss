@@ -1,0 +1,16 @@
+/*solo se pudo aplicar variables*/
+.img_disenio_paisajismo_con_macetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  justify-items: center;
+  margin-bottom: 10px;
+  background-color: rgb(243, 219, 182);
+}
+main {
+  .h1 {
+    @include h1;
+    padding-bottom: 8px;
+  }
+}

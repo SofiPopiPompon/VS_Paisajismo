@@ -1,0 +1,26 @@
+/*aplique variables*/
+div {
+  .h1-mantenimiento {
+    @include h1;
+    margin-bottom: 2%;
+  }
+}
+
+.tips-cuidados_h3 {
+  font-size: 28px;
+  font-weight: 400px;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+}
+.img-flora {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.img-tips-cuidados {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

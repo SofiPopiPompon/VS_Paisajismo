@@ -1,0 +1,204 @@
+//import//
+@import "index";
+@import "nosotros";
+@import "proyectos";
+@import "Disenio-paisajismo-con-macetas";
+@import "mantenimiento-de-plantas";
+@import "contactanos";
+@import "variables";
+/*reset por default*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  /*font-family: var(--bs-body-font-family);*/
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+//nesting//
+/*banner de inicio*/
+header {
+  display: grid;
+  padding: 25px 50px;
+  background-color: $bg-color;
+  width: 100%;
+  height: 140px;
+  font-family: $txt;
+  gap: 10px;
+  ul li {
+    list-style: none;
+    display: inline;
+    position: relative;
+    font-family: $txt;
+    font-size: 20px;
+    font-weight: 300px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    min-width: 170px;
+    display: inline-block;
+    text-align: center;
+  }
+  .bg-secondary-subtle {
+    background-color: $bg-color !important;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-family: $txt;
+    font-size: 20px;
+  }
+  .dropdown-menu li a:hover {
+    background-color: $bg-color;
+  }
+  ul li:hover ul {
+    display: block; /*visible con el mouse hover*/
+  }
+  ul li a {
+    font-size: 20 px;
+    font-weight: 300px;
+    text-align: left;
+    font-family: $txt;
+  }
+}
+//nesting//
+/*footer*/
+.pie_de_pagina {
+  background-image: url(../img/Tulipanes.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  color: antiquewhite; /*aplica para el mail*/
+  text-align: center;
+  .li {
+    list-style: none;
+    display: block;
+    font-family: $txt;
+    padding-right: 5px;
+    margin-bottom: 0%;
+  }
+  .img {
+    text-align: center;
+    display: inline;
+    padding-right: 5px;
+  }
+  .a {
+    text-decoration: none;
+    color: antiquewhite; /*aplica para ig y fb*/
+    font-size: 20px;
+    border: none;
+    font-family: $txt;
+  }
+}
+.pie_de_pagina ul {
+  margin-bottom: 0%;
+}
+
+@media (max-width: 768px) {
+  /*inicio-index*/
+  #flex-inicio {
+    flex-direction: column;
+  }
+  .carrusel-de-imagen {
+    display: block;
+  }
+  .carrusel-de-imagen-2 {
+    display: none;
+  }
+
+  /*nosotros*/
+  .sectionNosotros h5 fieldset {
+    text-align: center;
+  }
+  .sectionDondeNosEncontramos h5 fieldset {
+    text-align: center;
+  }
+  #divnosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img_maceta_1 {
+    align-content: center;
+    top: 10px;
+  }
+
+  /*proyectos*/
+  .proyecto-hall-pilar h4 {
+    text-align: center;
+  }
+  .img-hall {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
+  .proyecto-oficina-pilar h4 {
+    text-align: center;
+  }
+  .img-oficinas {
+    grid-template-columns: 1fr;
+  }
+  .proyecto-huerta-nordelta h4 {
+    text-align: center;
+  }
+  .img-huerta {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
+  .proyecto-paseoMendoza-momentovinito h4 {
+    text-align: center;
+  }
+  .img-paseoMendoza {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
+
+  /*contactanos*/
+  .Formulario_de_contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*diseño de paisajismo con macetas*/
+  .img_disenio_paisajismo_con_macetas {
+    grid-template-columns: auto;
+  }
+
+  /*mantenimiento de plantas*/
+  .img-flora {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
+  .img-tips-cuidados {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+  }
+
+  /*footer*/
+  .pie_de_pagina {
+    background-image: url(../img/macetas-flores.jpeg);
+    width: 100%;
+  }
+  .pie_de_pagina .li {
+    text-align: center;
+    padding-right: 0px;
+  }
+  .pie_de_pagina .li-mail {
+    font-size: 19px;
+  }
+}

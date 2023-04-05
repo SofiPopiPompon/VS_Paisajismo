@@ -1,0 +1,53 @@
+@mixin h1 {
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  font-weight: 200;
+  background-color: rgb(243, 219, 182);
+  margin-bottom: 0%;
+}
+
+.carrusel-de-imagen {
+  display: none;
+}
+div {
+  .h1-index {
+    @include h1;
+  }
+}
+/*con nesting*/
+#flex-inicio {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  & .nosotros- {
+    text-align: left;
+    display: inline;
+    font-size: 25px;
+    width: 200px;
+    /*height: 200px;*/
+    overflow: auto;
+    font-family: "EB Garamond", serif;
+  }
+  .donde-nos-encontramos {
+    text-align: left;
+    display: inline;
+    font-size: 25px;
+    width: 240px;
+    height: 340px;
+    overflow: auto;
+    font-family: "EB Garamond", serif;
+  }
+  .mesa-exterior {
+    text-align: center;
+  }
+  .nuestro-trabajo {
+    text-align: right;
+    display: inline;
+    font-size: 25px;
+    width: 250px;
+    height: 340px;
+    overflow: auto;
+    font-family: "EB Garamond", serif;
+  }
+}
